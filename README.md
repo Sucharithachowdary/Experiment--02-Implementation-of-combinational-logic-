@@ -24,31 +24,42 @@ Using NOR gates NOR gate is actually a combination of two logic gates: OR gate f
 ~~~
 ## Procedure
 ~~~
-The input and output variables are allocated with letter symbols. The exact truth table that defines the required relationships between inputs and outputs is derived. The simplified Boolean function is obtained from each output. The logic diagram is drawn.
+The input and output variables are allocated with letter symbols.
+
+The exact truth table that defines the required relationships between inputs and outputs is derived. 
+
+The simplified Boolean function is obtained from each output. The logic diagram is drawn.
+
 ~~~
 ## Program:
-/*
+~~~
 Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
 Developed by: sucharitha.k
 RegisterNumber:  212221240021
-/*
-Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
-Developed by: R.HEMAPRIYA
-RegisterNumber: 212221230043 
-*/
-
+~~~
+~~~
 module ff(a,b,c,d,f1);
+
 input a,b,c,d;
+
 output f1;
+
 assign f1 = (~b&~d) | (~a&b&d) | (a&b&~c);
+
 endmodule
 
 module de (w,x,y,z,f2);
+
 input w,x,y,z;
+
 output f2;
+
 assign f2 = (x&y)|(w&y)|(~y&z);
+
 endmodule
-*/
+
+~~~
+
 
 
 ## Output:
